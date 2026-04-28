@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💞 Anvuu 💞</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{g:{50:'#fff0f3',100:'#ffe0e6',200:'#ffb3c6',300:'#ff8fab',400:'#ff5c8a',500:'#ff2d6b',600:'#e6004c',700:'#b3003c',800:'#80002b',900:'#4d001a'},blk:{DEFAULT:'#050505',l:'#0a0a0a',c:'#0e0e0e'}}},fontFamily:{script:['Dancing Script','cursive'],serif:['Playfair Display','serif'],sans:['Inter','sans-serif']}}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#050505;color:#ffe0e6;font-family:'Inter',sans-serif;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#050505}::-webkit-scrollbar-thumb{background:#ff2d6b;border-radius:2px}
+
+.fh{position:fixed;pointer-events:none;z-index:9999;animation:fUp linear forwards;opacity:0}
+@keyframes fUp{0%{opacity:1;transform:translateY(0) rotate(0deg) scale(1)}100%{opacity:0;transform:translateY(-100vh) rotate(720deg) scale(.2)}}
+@keyframes ph{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes fls{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+@keyframes gp{0%,100%{text-shadow:0 0 20px rgba(255,45,107,.3)}50%{text-shadow:0 0 50px rgba(255,45,107,.7),0 0 100px rgba(255,45,107,.2)}}
+@keyframes tw{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+@keyframes pi{0%{transform:scale(0) rotate(-8deg);opacity:0}60%{transform:scale(1.1) rotate(1deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+@keyframes cp{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+@keyframes gb{0%,100%{border-color:rgba(255,45,107,.1)}50%{border-color:rgba(255,45,107,.35)}}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes floatText{0%,100%{transform:translateY(0) scale(1);opacity:.6}50%{transform:translateY(-8px) scale(1.02);opacity:1}}
+@keyframes ripple{0%{transform:scale(0);opacity:.6}100%{transform:scale(4);opacity:0}}
+@keyframes slideIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes cursor-blink{0%,100%{opacity:1}50%{opacity:0}}
+
+.af{animation:fl 3s ease-in-out infinite}.afs{animation:fls 4s ease-in-out infinite}.ag{animation:gp 3s ease-in-out infinite}.aph{animation:ph 1.2s ease-in-out infinite}.api{animation:pi .5s cubic-bezier(.16,1,.3,1) forwards}
+
+.rv{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.16,1,.3,1)}.rv.v{opacity:1;transform:translateY(0)}
+.rvl{opacity:0;transform:translateX(-50px);transition:all .7s cubic-bezier(.16,1,.3,1)}.rvl.v{opacity:1;transform:translateX(0)}
+.rvr{opacity:0;transform:translateX(50px);transition:all .7s cubic-bezier(.16,1,.3,1)}.rvr.v{opacity:1;transform:translateX(0)}
+
+.ptg{background:linear-gradient(135deg,#ff5c8a,#ff2d6b,#ff5c8a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:gs 3s ease infinite}
+@keyframes gs{0%,100%{background-position:0% center}50%{background-position:100% center}}
+
+.pg{background:linear-gradient(135deg,#ff2d6b,#e6004c)}
+.pgw{box-shadow:0 0 30px rgba(255,45,107,.25)}
+
+.star{position:absolute;width:2px;height:2px;background:#ff8fab;border-radius:50%;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--dl)}
+
+.nd{width:7px;height:7px;border-radius:50%;background:rgba(255,45,107,.25);transition:all .3s;cursor:pointer}.nd.ac{background:#ff2d6b;box-shadow:0 0 10px rgba(255,45,107,.5);transform:scale(1.3)}
+
+.cd{background:#0e0e0e;border:1px solid rgba(255,45,107,.08);border-radius:1.25rem;padding:1.75rem;transition:all .4s}.cd:hover{border-color:rgba(255,45,107,.2);background:#111}
+
+.tg{display:inline-block;padding:3px 12px;border-radius:999px;background:rgba(255,45,107,.06);border:1px solid rgba(255,45,107,.12);font-size:.65rem;color:#ff5c8a;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+
+.bp{background:linear-gradient(135deg,#ff2d6b,#e6004c);border:none;color:white;padding:.9rem 2rem;border-radius:2rem;font-size:1rem;cursor:pointer;transition:all .3s;font-family:'Inter',sans-serif;font-weight:600}
+.bp:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(255,45,107,.35)}
+
+.bg{background:rgba(255,45,107,.05);border:1px solid rgba(255,45,107,.12);color:#ff5c8a;padding:.5rem 1.2rem;border-radius:2rem;font-size:.8rem;cursor:pointer;transition:all .3s;font-family:'Inter',sans-serif;font-weight:500}
+.bg:hover{background:rgba(255,45,107,.1);border-color:rgba(255,45,107,.25)}
+
+.nb{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.3);padding:.9rem 2rem;border-radius:2rem;font-size:1rem;cursor:pointer;font-family:'Inter',sans-serif;transition:all .1s;font-weight:500}
+
+.ca{width:100%;height:260px;background:rgba(255,45,107,.02);border:1px solid rgba(255,45,107,.08);border-radius:1.25rem;position:relative;overflow:hidden;cursor:pointer}
+.ch{position:absolute;font-size:1.6rem;cursor:pointer;transition:transform .1s;user-select:none}
+
+.mc{width:70px;height:70px;perspective:600px;cursor:pointer}
+.mci{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.mc.f .mci{transform:rotateY(180deg)}.mc.m .mci{transform:rotateY(180deg)}
+.mcf,.mcb{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:.75rem;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.mcf{background:#0e0e0e;border:1px solid rgba(255,45,107,.15)}
+.mcb{background:linear-gradient(135deg,rgba(255,45,107,.12),rgba(230,0,76,.12));border:1px solid rgba(255,45,107,.2);transform:rotateY(180deg)}
+
+.wy{background:#0e0e0e;border:1px solid rgba(255,45,107,.08);border-radius:1.25rem;padding:1.25rem;cursor:pointer;transition:all .3s;text-align:center}
+.wy:hover{background:rgba(255,45,107,.06);border-color:rgba(255,45,107,.2);transform:scale(1.02)}
+.wy.s{background:rgba(255,45,107,.12);border-color:#ff2d6b;box-shadow:0 0 15px rgba(255,45,107,.15)}
+
+.tt{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(80px);background:linear-gradient(135deg,#ff2d6b,#e6004c);color:white;padding:.7rem 1.5rem;border-radius:1rem;z-index:10000;transition:transform .4s cubic-bezier(.16,1,.3,1);font-weight:600;font-size:.8rem;box-shadow:0 8px 30px rgba(255,45,107,.35)}
+.tt.sh{transform:translateX(-50%) translateY(0)}
+
+.cf{position:fixed;z-index:9998;pointer-events:none;animation:cf linear forwards}
+.cfl{position:absolute;pointer-events:none;animation:fUp 1s linear forwards;font-weight:700;color:#ff2d6b}
+
+.typing-cursor{display:inline-block;width:2px;height:1em;background:#ff2d6b;margin-left:4px;animation:cursor-blink 1s step-end infinite;vertical-align:text-bottom}
+
+.marquee-wrap{overflow:hidden;white-space:nowrap}
+.marquee-track{display:inline-flex;animation:marquee 20s linear infinite}
+
+.online-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;animation:ph 2s ease-in-out infinite}
+
+.msg-bubble{background:#0e0e0e;border:1px solid rgba(255,45,107,.1);border-radius:1.25rem 1.25rem 1.25rem .25rem;padding:1rem 1.25rem;max-width:280px}
+.msg-bubble-me{background:rgba(255,45,107,.08);border:1px solid rgba(255,45,107,.15);border-radius:1.25rem 1.25rem .25rem 1.25rem;padding:1rem 1.25rem;max-width:280px;margin-left:auto}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav id="navDots" class="fixed right-3 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2.5">
+  <div class="nd ac" data-section="0"></div><div class="nd" data-section="1"></div><div class="nd" data-section="2"></div><div class="nd" data-section="3"></div><div class="nd" data-section="4"></div><div class="nd" data-section="5"></div><div class="nd" data-section="6"></div><div class="nd" data-section="7"></div><div class="nd" data-section="8"></div><div class="nd" data-section="9"></div>
+</nav>
+
+<div id="starsContainer" class="fixed inset-0 z-0 pointer-events-none"></div>
+
+<!-- ===== 1: HERO ===== -->
+<section id="section0" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-g-500/6 rounded-full blur-[200px] animate-pulse"></div>
+  <div class="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] bg-g-500/4 rounded-full blur-[150px] animate-pulse" style="animation-delay:1.5s"></div>
+
+  <div class="text-center z-10 px-6 max-w-4xl">
+    <div class="flex items-center justify-center gap-2 mb-8 rv">
+      <span class="online-dot"></span>
+      <span class="text-g-400/40 text-xs tracking-widest uppercase">online for you</span>
+    </div>
+
+    <h1 class="font-script text-7xl md:text-9xl lg:text-[10rem] font-bold mb-6 ag ptg rv" style="transition-delay:.15s">
+      Anvuu
+    </h1>
+
+    <p class="font-serif text-xl md:text-2xl text-g-200/50 mb-2 rv" style="transition-delay:.3s">
+      1000km apart. still closer than anyone.
+    </p>
+
+    <p class="text-g-300/25 text-sm mb-12 rv" style="transition-delay:.4s">
+      screen se zyada koi nahi jaanta mujhe 💞
+    </p>
+
+    <a href="#section1" class="inline-flex items-center gap-2 bp rv" style="transition-delay:.5s">
+      <span>come in</span>
+      <span class="iconify" data-icon="lucide:arrow-down" data-width="16"></span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== 2: ONLINE LOVE ===== -->
+<section id="section1" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-4xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">long distance but close 💞</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Screen Se Zyada</h2>
+    </div>
+
+    <!-- Chat mockup -->
+    <div class="max-w-md mx-auto space-y-4 rv" style="transition-delay:.2s">
+      <div class="msg-bubble">
+        <p class="text-g-200/60 text-sm">good morning ☀️</p>
+        <p class="text-g-400/25 text-xs mt-1">7:02 AM</p>
+      </div>
+      <div class="msg-bubble-me">
+        <p class="text-g-200/70 text-sm">5 min early today? 🤨</p>
+        <p class="text-g-400/25 text-xs mt-1 text-right">7:02 AM</p>
+      </div>
+      <div class="msg-bubble">
+        <p class="text-g-200/60 text-sm">couldn't wait to talk to u 💞</p>
+        <p class="text-g-400/25 text-xs mt-1">7:03 AM</p>
+      </div>
+      <div class="msg-bubble-me">
+        <p class="text-g-200/70 text-sm">stop being cute it's 7am 😭</p>
+        <p class="text-g-400/25 text-xs mt-1 text-right">7:03 AM</p>
+      </div>
+      <div class="msg-bubble">
+        <p class="text-g-200/60 text-sm">can't help it 🤷‍♀️</p>
+        <p class="text-g-400/25 text-xs mt-1">7:04 AM</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-4 mt-12">
+      <div class="cd text-center rv" style="transition-delay:.3s">
+        <div class="text-4xl mb-3">📞</div>
+        <h3 class="font-serif text-lg text-g-100/80">7 hour calls</h3>
+        <p class="text-g-200/25 text-xs mt-1">and we still don't run out of things to say</p>
+      </div>
+      <div class="cd text-center rv" style="transition-delay:.4s">
+        <div class="text-4xl mb-3">🌐</div>
+        <h3 class="font-serif text-lg text-g-100/80">different timezones</h3>
+        <p class="text-g-200/25 text-xs mt-1">same heart rate when we talk tho</p>
+      </div>
+      <div class="cd text-center rv" style="transition-delay:.5s">
+        <div class="text-4xl mb-3">📱</div>
+        <h3 class="font-serif text-lg text-g-100/80">200 screenshots</h3>
+        <p class="text-g-200/25 text-xs mt-1">of things that reminded me of you</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3: THE LORE ===== -->
+<section id="section2" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute top-0 left-1/3 w-80 h-80 bg-g-500/4 rounded-full blur-[120px]"></div>
+  <div class="max-w-4xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">the lore 📖</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">How It Started</h2>
+    </div>
+    <div class="relative">
+      <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-g-500/15 to-transparent hidden md:block"></div>
+      <div class="space-y-14">
+        <div class="flex flex-col md:flex-row items-center gap-6 rvl">
+          <div class="md:w-1/2 md:text-right md:pr-12">
+            <span class="tg mb-2 inline-block">phase 1</span>
+            <h3 class="font-serif text-2xl text-g-100/80 mt-2">Pehli DM</h3>
+            <p class="text-g-200/25 mt-2 text-sm">slid in. not even sorry about it. something about your profile said "this one's different."</p>
+          </div>
+          <div class="w-10 h-10 rounded-full pg flex items-center justify-center text-white shrink-0 z-10 pgw text-sm">💬</div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6 rvr">
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="w-10 h-10 rounded-full pg flex items-center justify-center text-white shrink-0 z-10 pgw text-sm">📞</div>
+          <div class="md:w-1/2 md:pl-12">
+            <span class="tg mb-2 inline-block">phase 2</span>
+            <h3 class="font-serif text-2xl text-g-100/80 mt-2">Pehli Call</h3>
+            <p class="text-g-200/25 mt-2 text-sm">3 hours. GONE. just like that. your voice did something to my brain chemistry fr</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6 rvl">
+          <div class="md:w-1/2 md:text-right md:pr-12">
+            <span class="tg mb-2 inline-block">phase 3</span>
+            <h3 class="font-serif text-2xl text-g-100/80 mt-2">Late Night Calls</h3>
+            <p class="text-g-200/25 mt-2 text-sm">sleep schedule? don't know her. but i know the sound of you falling asleep on call 🥺</p>
+          </div>
+          <div class="w-10 h-10 rounded-full pg flex items-center justify-center text-white shrink-0 z-10 pgw text-sm">🌙</div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6 rvr">
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="w-10 h-10 rounded-full pg flex items-center justify-center text-white shrink-0 z-10 pgw text-sm">💞</div>
+          <div class="md:w-1/2 md:pl-12">
+            <span class="tg mb-2 inline-block">now</span>
+            <h3 class="font-serif text-2xl text-g-100/80 mt-2">Ab Toh Tu Hi Hai</h3>
+            <p class="text-g-200/25 mt-2 text-sm">screen or no screen. distance or no distance. it's you. it's always been you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4: QUOTES ===== -->
+<section id="section3" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute top-1/2 right-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-5xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">aesthetic 🎞️</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Quotes That Hit</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="cd rv" style="transition-delay:.1s"><div class="text-3xl mb-3">💞</div><p class="font-serif text-g-100/70 italic leading-relaxed">"I have found the one whom my soul loves."</p><p class="text-g-400/20 text-xs mt-3">— Song of Solomon 3:4</p></div>
+      <div class="cd rv" style="transition-delay:.15s"><div class="text-3xl mb-3">🌹</div><p class="font-serif text-g-100/70 italic leading-relaxed">"In all the world, there is no heart for me like yours."</p><p class="text-g-400/20 text-xs mt-3">— Maya Angelou</p></div>
+      <div class="cd rv" style="transition-delay:.2s"><div class="text-3xl mb-3">💫</div><p class="font-serif text-g-100/70 italic leading-relaxed">"I love you not only for what you are, but for what I am when I am with you."</p><p class="text-g-400/20 text-xs mt-3">— Roy Croft</p></div>
+      <div class="cd rv" style="transition-delay:.25s"><div class="text-3xl mb-3">🦋</div><p class="font-serif text-g-100/70 italic leading-relaxed">"You are my today and all of my tomorrows."</p><p class="text-g-400/20 text-xs mt-3">— Leo Christopher</p></div>
+      <div class="cd rv" style="transition-delay:.3s"><div class="text-3xl mb-3">🌙</div><p class="font-serif text-g-100/70 italic leading-relaxed">"Whatever our souls are made of, yours and mine are the same."</p><p class="text-g-400/20 text-xs mt-3">— Emily Brontë</p></div>
+      <div class="cd rv" style="transition-delay:.35s"><div class="text-3xl mb-3">✨</div><p class="font-serif text-g-100/70 italic leading-relaxed">"I would rather share one lifetime with you than face all the ages of this world alone."</p><p class="text-g-400/20 text-xs mt-3">— J.R.R. Tolkien</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5: REASONS ===== -->
+<section id="section4" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute top-0 left-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-5xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">the list 📝</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Why You Hit Different</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-3" id="reasonsList"></div>
+    <div class="text-center mt-10 rv"><button onclick="addReason()" class="bp"><span class="aph inline-block mr-2">💞</span>more</button></div>
+  </div>
+</section>
+
+<!-- ===== 6: GAMES 1 ===== -->
+<section id="section5" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-5xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">game time 🎮</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Play With Me</h2>
+    </div>
+
+    <!-- Heart Clicker -->
+    <div class="cd mb-6 rv">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-2xl">💞</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Heart Clicker</h3><p class="text-g-200/20 text-xs">tap for love pts</p></div>
+        <div class="ml-auto text-right"><div class="text-g-400 font-bold text-2xl" id="clickerScore">0</div><div class="text-g-200/20 text-xs">pts</div></div>
+      </div>
+      <div class="relative h-40 bg-g-500/3 rounded-xl border border-g-500/8 flex items-center justify-center cursor-pointer select-none overflow-hidden" id="clickerArea" onclick="clickHeart(event)">
+        <div class="text-7xl aph select-none">💞</div>
+      </div>
+      <div class="flex justify-between items-center mt-3 flex-wrap gap-2">
+        <span class="text-g-200/15 text-xs">tap the heart!</span>
+        <div class="flex gap-2">
+          <button onclick="buyUp('d')" class="bg text-xs" id="uD">2x (100 pts)</button>
+          <button onclick="buyUp('a')" class="bg text-xs" id="uA">Auto (500 pts)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catch Hearts -->
+    <div class="cd mb-6 rv">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-2xl">💝</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Catch Hearts</h3><p class="text-g-200/20 text-xs">tap before they vanish!</p></div>
+        <div class="ml-auto text-right"><div class="text-g-400 font-bold text-xl" id="heartScore">0</div><div class="text-g-200/20 text-xs">caught</div></div>
+      </div>
+      <div class="ca" id="catchArea">
+        <div class="absolute inset-0 flex items-center justify-center text-g-200/10 text-sm pointer-events-none" id="catchHint">tap anywhere 💕</div>
+      </div>
+    </div>
+
+    <!-- Kiss Counter -->
+    <div class="cd rv">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">💋</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Kiss Counter</h3></div>
+        <div class="ml-auto"><div class="text-g-400 font-bold text-xl" id="kissCount">0</div></div>
+      </div>
+      <div class="text-center">
+        <button onclick="sendKiss()" class="bp text-xl px-8 py-4 aph">💋 smooch</button>
+        <div id="kissExp" class="relative h-6 mt-3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7: MORE GAMES ===== -->
+<section id="section6" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute top-1/3 left-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-5xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">round 2 🔥</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">More Games</h2>
+    </div>
+
+    <!-- Love Wheel -->
+    <div class="cd mb-6 rv">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">🎡</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Love Wheel</h3></div>
+      </div>
+      <div class="text-center">
+        <div class="relative w-56 h-56 mx-auto mb-5">
+          <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 text-xl z-10">🔻</div>
+          <div class="w-full h-full rounded-full border-[3px] border-g-500/15 overflow-hidden transition-transform" id="loveWheel">
+            <div style="position:absolute;top:0;left:0;width:50%;height:50%;background:rgba(255,45,107,.1);display:flex;align-items:center;justify-content:center;font-size:1.3rem">💞</div>
+            <div style="position:absolute;top:0;right:0;width:50%;height:50%;background:rgba(230,0,76,.1);display:flex;align-items:center;justify-content:center;font-size:1.3rem">🦋</div>
+            <div style="position:absolute;bottom:0;right:0;width:50%;height:50%;background:rgba(255,45,107,.07);display:flex;align-items:center;justify-content:center;font-size:1.3rem">🌙</div>
+            <div style="position:absolute;bottom:0;left:0;width:50%;height:50%;background:rgba(230,0,76,.07);display:flex;align-items:center;justify-content:center;font-size:1.3rem">✨</div>
+          </div>
+        </div>
+        <div class="text-lg font-script ptg mb-3 h-7" id="wheelResult"></div>
+        <button onclick="spinWheel()" class="bp">🎰 spin</button>
+      </div>
+    </div>
+
+    <!-- Would You Rather -->
+    <div class="cd mb-6 rv">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">🤔</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Would You Rather</h3></div>
+      </div>
+      <div class="text-center mb-5">
+        <p class="font-serif text-lg text-g-100/70 mb-5" id="wyrText"></p>
+        <div class="grid grid-cols-2 gap-3" id="wyrOpts"></div>
+      </div>
+      <div class="text-center"><button onclick="nextWYR()" class="bg">next 🔄</button></div>
+    </div>
+
+    <!-- Memory Match -->
+    <div class="cd rv">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-2xl">🧠</span>
+        <div><h3 class="font-serif text-xl text-g-100/80">Memory Match</h3></div>
+        <div class="ml-auto text-right"><div class="text-g-400 font-bold text-xl" id="matchMoves">0</div><div class="text-g-200/20 text-xs">moves</div></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2" id="memoryGrid"></div>
+      <div class="text-center mt-3"><button onclick="initMM()" class="bg text-xs">reset 🔄</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8: LOVE CALC ===== -->
+<section id="section7" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-g-500/4 rounded-full blur-[120px]"></div>
+  <div class="max-w-xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">math 🧮</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Love Calc</h2>
+    </div>
+    <div class="cd text-center rv">
+      <div class="space-y-5">
+        <div>
+          <label class="text-g-200/25 text-xs block mb-1">her</label>
+          <input type="text" value="Anvi" readonly class="w-full bg-g-500/3 border border-g-500/10 rounded-xl px-4 py-2.5 text-center text-g-100 font-serif text-lg focus:outline-none" />
+        </div>
+        <div class="text-3xl aph">💞</div>
+        <div>
+          <label class="text-g-200/25 text-xs block mb-1">me</label>
+          <input type="text" id="myName" placeholder="ur name..." class="w-full bg-g-500/3 border border-g-500/10 rounded-xl px-4 py-2.5 text-center text-g-100 font-serif text-lg focus:outline-none placeholder:text-g-200/10" />
+        </div>
+        <button onclick="calcLove()" class="bp w-full">💝 calculate</button>
+        <div id="loveRes" class="hidden">
+          <div class="text-6xl font-script ptg mb-1" id="lovePct"></div>
+          <p class="text-g-200/40 text-sm" id="loveMsg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9: LETTERS ===== -->
+<section id="section8" class="min-h-screen flex items-center justify-center relative px-6 py-20">
+  <div class="absolute top-1/4 left-0 w-96 h-96 bg-g-500/4 rounded-full blur-[150px]"></div>
+  <div class="max-w-4xl w-full z-10">
+    <div class="text-center mb-16">
+      <span class="tg mb-4 inline-block rv">letters 💌</span>
+      <h2 class="font-script text-5xl md:text-7xl ptg rv" style="transition-delay:.1s">Unsent Texts</h2>
+      <p class="text-g-200/20 mt-3 rv" style="transition-delay:.2s">things i type and delete 🥺</p>
+    </div>
+    <div class="space-y-4">
+      <div class="rv" style="transition-delay:.1s">
+        <div class="lenv" onclick="togL(this)">
+          <div class="cd flex items-center gap-3 cursor-pointer hover:border-g-500/20 transition-all">
+            <span class="text-3xl">💌</span>
+            <div class="text-left flex-1"><h4 class="font-script text-xl text-g-400/80">draft 1</h4><p class="text-g-200/15 text-xs">2:47 AM — typed, deleted, retyped</p></div>
+            <span class="iconify text-g-400/20 transition-transform duration-300" data-icon="lucide:chevron-down" data-width="16"></span>
+          </div>
+        </div>
+        <div class="lcon bg-g-500/2 rounded-xl mx-3 -mt-1 border border-g-500/5" style="max-height:0;overflow:hidden;transition:max-height .7s ease,padding .7s ease;padding:0 1.25rem">
+          <p class="font-serif text-g-100/50 leading-relaxed py-4 text-sm">Anvuu,<br><br>sometimes i type paragraphs and delete them. not because i don't know what to say. but because words feel too small for what i actually mean.<br><br>but here's what i keep deleting: you make the distance feel like nothing. and that scares me. because what if one day it does feel like something?<br><br>but then you call. and i hear your voice. and nothing else matters. 💞</p>
+        </div>
+      </div>
+      <div class="rv" style="transition-delay:.2s">
+        <div class="lenv" onclick="togL(this)">
+          <div class="cd flex items-center gap-3 cursor-pointer hover:border-g-500/20 transition-all">
+            <span class="text-3xl">📮</span>
+            <div class="text-left flex-1"><h4 class="font-script text-xl text-g-400/80">draft 2</h4><p class="text-g-200/15 text-xs">11:30 PM — almost sent</p></div>
+            <span class="iconify text-g-400/20 transition-transform duration-300" data-icon="lucide:chevron-down" data-width="16"></span>
+          </div>
+        </div>
+        <div class="lcon bg-g-500/2 rounded-xl mx-3 -mt-1 border border-g-500/5" style="max-height:0;overflow:hidden;transition:max-height .7s ease,padding .7s ease;padding:0 1.25rem">
+          <p class="font-serif text-g-100/50 leading-relaxed py-4 text-sm">Ari,<br><br>you know what's wild? i know your screen time face. i know the angle you hold your phone. i know your typing pattern — when you're excited you send 5 messages instead of 1.<br><br>i know you through a screen better than most people know someone sitting right next to them.<br><br>that's not sad. that's us. and i wouldn't trade it. 💞</p>
+        </div>
+      </div>
+      <div class="rv" style="transition-delay:.3s">
+        <div class="lenv" onclick="togL(this)">
+          <div class="cd flex items-center gap-3 cursor-pointer hover:border-g-500/20 transition-all">
+            <span class="text-3xl">💌</span>
+            <div class="text-left flex-1"><h4 class="font-script text-xl text-g-400/80">draft 3</h4><p class="text-g-200/15 text-xs">3:15 AM — saved to notes</p></div>
+            <span class="iconify text-g-400/20 transition-transform duration-300" data-icon="lucide:chevron-down" data-width="16"></span>
+          </div>
+        </div>
+        <div class="lcon bg-g-500/2 rounded-xl mx-3 -mt-1 border border-g-500/5" style="max-height:0;overflow:hidden;transition:max-height .7s ease,padding .7s ease;padding:0 1.25rem">
+          <p class="font-serif text-g-100/50 leading-relaxed py-4 text-sm">Anvuu,<br><br>one day i won't have to say goodnight through a screen.<br><br>one day i'll just be there. next to you. and the distance will be a story we tell about how we made it.<br><br>until then — every call, every text, every screenshot — it's all leading to that day. 💞</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10: PROPOSAL ===== -->
+<section id="section9" class="min-h-screen flex items-center justify-center relative px-6 py-20 overflow-hidden">
+  <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-g-500/8 rounded-full blur-[200px] animate-pulse"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-g-500/5 rounded-full blur-[150px] animate-pulse" style="animation-delay:1s"></div>
+
+  <div class="text-center z-10 max-w-3xl">
+    <span class="tg mb-6 inline-block rv">the final boss 💍</span>
+    <div class="text-7xl mb-8 afs rv" style="transition-delay:.1s">💍</div>
+
+    <h2 class="font-script text-5xl md:text-8xl ptg mb-4 ag rv" style="transition-delay:.2s">Anvuu</h2>
+
+    <p class="font-serif text-2xl md:text-3xl text-g-100/60 mb-2 rv" style="transition-delay:.3s">screen se shuru hua,</p>
+    <p class="font-serif text-2xl md:text-3xl text-g-100/60 mb-10 rv" style="transition-delay:.4s">forever tak chalega 💞</p>
+
+    <p class="text-g-200/20 text-base leading-relaxed mb-12 max-w-lg mx-auto rv" style="transition-delay:.5s">
+      i don't need to be next to you to know. distance is just a number. you're the answer to every question my heart asks.
+    </p>
+
+    <div class="rv" style="transition-delay:.6s">
+      <h3 class="font-script text-4xl md:text-6xl ptg mb-10 ag">Meri Ho Jaaogi?</h3>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mb-4">
+        <button onclick="sayYes()" class="bp text-2xl px-10 py-5 aph pgw hover:shadow-[0_0_60px_rgba(255,45,107,.5)]">💞 HAAN 💞</button>
+        <button id="noBtn" onmouseover="runAway()" onclick="runAway()" class="nb text-lg px-6 py-4">sochungi 😅</button>
+      </div>
+      <p class="text-g-200/10 text-xs">(good luck with the other one lol)</p>
+    </div>
+
+    <div id="presentsC" class="mt-10 hidden">
+      <p class="text-g-400 text-lg font-script mb-5 ag">🎉 unlocked for you 🎉</p>
+      <div class="flex flex-wrap justify-center gap-3" id="presentsG"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-6 text-center border-t border-g-500/5">
+  <p class="font-script text-xl ptg mb-1">made with 💞 for Anvuu</p>
+  <p class="text-g-200/15 text-xs">distance means nothing when they mean everything</p>
+</footer>
+
+<div id="toast" class="tt"></div>
+
+<div id="yesModal" class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/85 backdrop-blur-lg overflow-y-auto">
+  <div class="text-center p-8 max-w-lg my-auto">
+    <div class="text-7xl mb-5 aph">💞</div>
+    <h2 class="font-script text-5xl md:text-7xl ptg mb-3 ag">MINE.</h2>
+    <p class="font-serif text-xl text-g-100/60 mb-2">now and forever.</p>
+    <p class="text-g-200/30 mb-6">distance is officially canceled 💞</p>
+    <div class="text-5xl mb-6">🎉🎊💍🥂💞</div>
+    <div id="mPresents" class="mb-6">
+      <p class="text-g-400 font-script text-xl mb-3">🎁 yours now:</p>
+      <div class="grid grid-cols-3 gap-2" id="mPG"></div>
+    </div>
+    <button onclick="closeM()" class="bp text-lg">i know 💞</button>
+  </div>
+</div>
+
+<script>
+// Stars
+const sC=document.getElementById('starsContainer');for(let i=0;i<50;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.setProperty('--d',(2+Math.random()*4)+'s');s.style.setProperty('--dl',Math.random()*4+'s');const sz=(1+Math.random()*2)+'px';s.style.width=sz;s.style.height=sz;sC.appendChild(s);}
+
+// Floating hearts
+document.addEventListener('click',e=>{if(e.target.closest('.ca')||e.target.closest('button')||e.target.closest('input')||e.target.closest('.mc')||e.target.closest('.lenv')||e.target.closest('#clickerArea'))return;mFH(e.clientX,e.clientY);});
+function mFH(x,y){const h=document.createElement('div');h.className='fh';h.textContent=['💞','💕','💗','🩷'][Math.floor(Math.random()*4)];h.style.left=x+'px';h.style.top=y+'px';h.style.fontSize=(.8+Math.random()*.8)+'rem';h.style.animationDuration=(2+Math.random()*2)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),4500);}
+
+// Reveal
+const rObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('v');});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el=>rObs.observe(el));
+
+// Nav
+const scts=document.querySelectorAll('section'),dts=document.querySelectorAll('.nd');
+const sOb=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){const i=Array.from(scts).indexOf(en.target);dts.forEach((d,j)=>d.classList.toggle('ac',j===i));}});},{threshold:.3});
+scts.forEach(s=>sOb.observe(s));dts.forEach(d=>{d.addEventListener('click',()=>scts[parseInt(d.dataset.section)].scrollIntoView({behavior:'smooth'}));});
+
+// Reasons
+const reasons=[
+  {e:'😊',r:'teri smile = my phone wallpaper energy'},
+  {e:'🦋',r:'butterflies even through a screen, that\'s talent'},
+  {e:'🌙',r:'3am calls with you > any sleep ever'},
+  {e:'📞',r:'your voice note on loop, not even ashamed'},
+  {e:'🌟',r:'you make waiting worth it'},
+  {e:'🤗',r:'even virtual hugs from you hit different'},
+  {e:'📱',r:'my screen time went up 200% because of you'},
+  {e:'💪',r:'your strength? unmatched. period.'},
+  {e:'😭',r:'you get me without even being here'},
+  {e:'🎨',r:'you see beauty in everything, including me somehow'},
+  {e:'🧸',r:'your voice is my comfort sound'},
+  {e:'🌺',r:'your laugh over call > any song'},
+  {e:'✨',r:'you believe in me more than i do'},
+  {e:'🫶',r:'loving you is effortless, not exhausting'},
+  {e:'🌈',r:'you made gray feel colorful'},
+  {e:'🦊',r:'your cute habits i\'ve memorized through video'},
+  {e:'☕',r:'our morning routine: good morning text, every single day'},
+  {e:'🧿',r:'the way you look at me through the screen hits different'},
+];
+let rI=8;function rRender(){const l=document.getElementById('reasonsList');l.innerHTML='';reasons.slice(0,Math.min(rI,reasons.length)).forEach(r=>{const d=document.createElement('div');d.className='cd flex items-center gap-3 !p-3';d.innerHTML=`<div class="w-9 h-9 rounded-full pg flex items-center justify-center shrink-0 text-sm">${r.e}</div><p class="text-g-100/50 text-sm">${r.r}</p>`;l.appendChild(d);});}
+rRender();function addReason(){if(rI>=reasons.length){sT('that\'s all... jk there\'s infinite 💞');return;}rI+=4;rRender();sT('more loaded 💕');}
+
+// Clicker
+let cS=0,cP=1,aOn=false;
+function clickHeart(e){cS+=cP;const el=document.getElementById('clickerScore');el.textContent=cS;el.style.animation='cp .2s ease';setTimeout(()=>el.style.animation='',200);const a=document.getElementById('clickerArea'),r=a.getBoundingClientRect(),n=document.createElement('div');n.className='cfl';n.textContent='+'+cP;n.style.left=(e.clientX-r.left)+'px';n.style.top=(e.clientY-r.top)+'px';a.appendChild(n);setTimeout(()=>n.remove(),1000);}
+function buyUp(t){if(t==='d'&&cS>=100){cS-=100;cP=2;const b=document.getElementById('uD');b.textContent='2x ✅';b.disabled=true;b.style.opacity='.3';sT('2x unlocked 🔥');}else if(t==='a'&&cS>=500){cS-=500;aOn=true;const b=document.getElementById('uA');b.textContent='Auto ✅';b.disabled=true;b.style.opacity='.3';sT('auto love on 💞');setInterval(()=>{cS+=cP;document.getElementById('clickerScore').textContent=cS;},1000);}else{sT('keep tapping 💪');}document.getElementById('clickerScore').textContent=cS;}
+
+// Catch
+let hS=0;const cA=document.getElementById('catchArea');
+cA.addEventListener('click',e=>{const h=document.getElementById('catchHint');if(h)h.style.display='none';sH(e);});
+function sH(e){const r=cA.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,em=['💞','💕','💗','💖','💝','🩷'],h=document.createElement('div');h.className='ch';h.textContent=em[Math.floor(Math.random()*em.length)];h.style.left=(x-16)+'px';h.style.top=(y-16)+'px';h.style.animation='fl 2s ease-in-out infinite';h.addEventListener('click',ev=>{ev.stopPropagation();hS++;document.getElementById('heartScore').textContent=hS;h.style.transform='scale(2)';h.style.opacity='0';h.style.transition='all .2s';setTimeout(()=>h.remove(),200);if(hS%10===0)sT(hS+' hearts! 💝');});cA.appendChild(h);setTimeout(()=>{if(h.parentNode){h.style.opacity='0';h.style.transition='opacity .4s';setTimeout(()=>h.remove(),400);}},3500);}
+setInterval(()=>{const r=cA.getBoundingClientRect();if(!r.width)return;const h=document.getElementById('catchHint');if(h)h.style.display='none';const em=['💞','💕','💗','💖','💝'],h=document.createElement('div');h.className='ch';h.textContent=em[Math.floor(Math.random()*em.length)];h.style.left=Math.random()*80+10+'%';h.style.top=Math.random()*80+10+'%';h.style.animation='fl 2s ease-in-out infinite';h.addEventListener('click',ev=>{ev.stopPropagation();hS++;document.getElementById('heartScore').textContent=hS;h.style.transform='scale(2)';h.style.opacity='0';h.style.transition='all .2s';setTimeout(()=>h.remove(),200);});cA.appendChild(h);setTimeout(()=>{if(h.parentNode){h.style.opacity='0';h.style.transition='opacity .8s';setTimeout(()=>h.remove(),800);}},3000);},2000);
+
+// Kiss
+let kC=0;function sendKiss(){kC++;const el=document.getElementById('kissCount');el.textContent=kC;el.style.animation='cp .2s ease';setTimeout(()=>el.style.animation='',200);const c=document.getElementById('kissExp');for(let i=0;i<4;i++){const k=document.createElement('span');k.textContent='💋';k.style.position='absolute';k.style.left=(30+Math.random()*40)+'%';k.style.fontSize='1.2rem';k.style.animation='fUp 1s ease-out forwards';c.appendChild(k);setTimeout(()=>k.remove(),1000);}if(kC===1)sT('first one 💋');else if(kC===10)sT('10! 💋💋');else if(kC===50)sT('50!! 💋');else if(kC===100)sT('100 💋💞');else if(kC%25===0)sT(kC+' kisses 💋');}
+
+// Wheel
+let spinning=false;const wM=['married in every universe 💞','butterflies? ENTIRE ZOO 🦋','moonlight calls forever 🌙','starlight date nights ✨'];
+function spinWheel(){if(spinning)return;spinning=true;const w=document.getElementById('loveWheel'),d=1800+Math.random()*1440;w.style.transition='transform 4s cubic-bezier(.17,.67,.12,.99)';w.style.transform='rotate('+d+'deg)';document.getElementById('wheelResult').textContent='...';setTimeout(()=>{document.getElementById('wheelResult').textContent=wM[Math.floor(Math.random()*wM.length)];spinning=false;},4200);}
+
+// WYR
+const wQ=[{q:'would you rather...',a:'hold hands irl 💕',b:'fall asleep on call 🧸'},{q:'would you rather...',a:'good morning texts ☀️',b:'good night voice notes 🌙'},{q:'would you rather...',a:'first meeting at airport ✈️',b:'first date at cafe ☕'},{q:'would you rather...',a:'slow dance on video 📹',b:'sing together on call 🎤'},{q:'would you rather...',a:'matching pfps 📱',b:'matching playlists 🎵'},{q:'would you rather...',a:'surprise delivery 📦',b:'surprise voice note 🎙️'},{q:'would you rather...',a:'3am deep talk 💬',b:'3am comfortable silence 🤫'},{q:'would you rather...',a:'watch movie together online 🎬',b:'stargaze on video call ✨'},{q:'would you rather...',a:'re-read old chats 📜',b:'make new memories 🌟'},{q:'would you rather...',a:'never be apart again 🏠',b:'always have something to look forward to 🎁'}];
+let wI=0;function rWYR(){const q=wQ[wI%wQ.length];document.getElementById('wyrText').textContent=q.q;document.getElementById('wyrOpts').innerHTML=`<div class="wy" onclick="selWYR(this)">${q.a}</div><div class="wy" onclick="selWYR(this)">${q.b}</div>`;}
+function selWYR(el){el.parentElement.querySelectorAll('.wy').forEach(c=>c.classList.remove('s'));el.classList.add('s');sT('nice choice 💕');}
+function nextWYR(){wI++;rWYR();}rWYR();
+
+// Memory
+const mE=['💞','💕','🌸','🦋','🌙','✨','🧸','🌹'];let fC=[],mP=0,mM=0,cF=true;
+function initMM(){const g=document.getElementById('memoryGrid');g.innerHTML='';fC=[];mP=0;mM=0;cF=true;document.getElementById('matchMoves').textContent='0';const p=[...mE,...mE];for(let i=p.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[p[i],p[j]]=[p[j],p[i]];}p.forEach(em=>{const c=document.createElement('div');c.className='mc';c.innerHTML=`<div class="mci"><div class="mcf">💞</div><div class="mcb">${em}</div></div>`;c.addEventListener('click',()=>fMC(c,em));g.appendChild(c);});}
+function fMC(c,em){if(!cF||c.classList.contains('f')||c.classList.contains('m'))return;c.classList.add('f');fC.push({c,em});if(fC.length===2){mM++;document.getElementById('matchMoves').textContent=mM;cF=false;if(fC[0].em===fC[1].em){fC[0].c.classList.add('m');fC[1].c.classList.add('m');mP++;fC=[];cF=true;if(mP===mE.length)setTimeout(()=>sT('all matched! like us 💞'),500);}else{setTimeout(()=>{fC[0].c.classList.remove('f');fC[1].c.classList.remove('f');fC=[];cF=true;},700);}}}
+initMM();
+
+// Love Calc
+function calcLove(){const n=document.getElementById('myName').value.trim();if(!n){sT('naam likho pehle 💕');return;}const cb=('Anvi'+n).toLowerCase();let h=0;for(let i=0;i<cb.length;i++){h=((h<<5)-h)+cb.charCodeAt(i);h=h&h;}let p=85+Math.abs(h%16);p=Math.min(p,100);const rd=document.getElementById('loveRes');rd.classList.remove('hidden');let cur=0;const iv=setInterval(()=>{cur++;document.getElementById('lovePct').textContent=cur+'%';if(cur>=p)clearInterval(iv);},20);document.getElementById('loveMsg').textContent=['cosmic! universe ships u 🌌💞','DESTINY fr 💫💕','soulmate tier ✨💗','stars wrote this 🌟💖','off the charts 💝🌙'][Math.floor(Math.random()*5)];mCF();}
+
+// Letters
+function togL(el){const o=el.classList.contains('opened');el.classList.toggle('opened');const c=el.nextElementSibling,ic=el.querySelector('.iconify');if(!o){c.style.maxHeight='400px';c.style.padding='1.25rem';if(ic)ic.style.transform='rotate(180deg)';}else{c.style.maxHeight='0';c.style.padding='0 1.25rem';if(ic)ic.style.transform='rotate(0)';}}
+
+// Toast
+function sT(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('sh');setTimeout(()=>t.classList.remove('sh'),2500);}
+
+// Confetti
+function mCF(){const cols=['#ff2d6b','#ff8fab','#e6004c','#ff5c8a','#fff','#ffb3c6'];for(let i=0;i<40;i++){const p=document.createElement('div');p.className='cf';p.style.left=Math.random()*100+'%';p.style.top='-10px';p.style.width=(4+Math.random()*8)+'px';p.style.height=(4+Math.random()*8)+'px';p.style.background=cols[Math.floor(Math.random()*cols.length)];p.style.borderRadius=Math.random()>.5?'50%':'0';p.style.animationDuration=(2+Math.random()*3)+'s';p.style.animationDelay=Math.random()*.4+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),6000);}}
+
+// No Button
+function runAway(){const b=document.getElementById('noBtn'),vw=window.innerWidth,vh=window.innerHeight,bw=b.offsetWidth,bh=b.offsetHeight;b.style.position='fixed';b.style.left=Math.random()*(vw-bw-30)+15+'px';b.style.top=Math.random()*(vh-bh-30)+15+'px';b.style.zIndex='9999';b.style.transition='all .1s ease';b.style.transform=`rotate(${Math.random()*30-15}deg) scale(${.6+Math.random()*.3})`;const txt=['sochungi 😅','pakad ke dikha 🏃','nah! 💨','try again 😜','too slow 😂','not happening 🤭','hehe 🏃‍♀️','miss me! 💨','impossible 😏','haan bol de na 😝','bilkul nahi 🏃‍♂️','gueeess 🤪'];b.textContent=txt[Math.floor(Math.random()*txt.length)];}
+
+// Yes
+const presents=[{e:'🌹',l:'infinite roses'},{e:'🌙',l:'moonlight calls'},{e:'💌',l:'voice notes daily'},{e:'🧸',l:'virtual cuddles'},{e:'🎵',l:'our playlist'},{e:'🌅',l:'first irl sunset'},{e:'🍰',l:'surprise deliveries'},{e:'✈️',l:'first flight to you'},{e:'💃',l:'video call dances'},{e:'📸',l:'screenshot folder'},{e:'☕',l:'morning texts forever'},{e:'💞',l:'my whole heart'}];
+function sayYes(){const m=document.getElementById('yesModal');m.classList.remove('hidden');m.style.display='flex';mCF();setTimeout(()=>mCF(),1000);setTimeout(()=>mCF(),2500);document.getElementById('noBtn').style.display='none';const g=document.getElementById('mPG');g.innerHTML='';presents.forEach((p,i)=>{setTimeout(()=>{const d=document.createElement('div');d.className='api';d.style.animationDelay=i*.08+'s';d.innerHTML=`<div class="bg-g-500/8 border border-g-500/15 rounded-lg p-2"><div class="text-xl">${p.e}</div><div class="text-g-400/60 text-[10px] mt-1">${p.l}</div></div>`;g.appendChild(d);},i*120);});const c=document.getElementById('presentsC');c.classList.remove('hidden');const mg=document.getElementById('presentsG');mg.innerHTML='';presents.forEach((p,i)=>{setTimeout(()=>{const d=document.createElement('div');d.className='cd !p-3 text-center api';d.style.animationDelay=i*.08+'s';d.innerHTML=`<div class="text-2xl mb-1">${p.e}</div><div class="text-g-400/50 text-[10px]">${p.l}</div>`;mg.appendChild(d);},400+i*120);});const iv=setInterval(()=>{mFH(Math.random()*window.innerWidth,window.innerHeight);},80);setTimeout(()=>clearInterval(iv),4000);}
+function closeM(){document.getElementById('yesModal').style.display='none';sT('mine. forever. 💞');}
+
+// Auto hearts
+setInterval(()=>{const h=document.createElement('div');h.className='fh';h.textContent=['💞','💕','💗','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*window.innerWidth+'px';h.style.top=window.innerHeight+'px';h.style.fontSize=(.7+Math.random()*.7)+'rem';h.style.animationDuration=(4+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),7000);},3500);
+
+// Init
+setTimeout(()=>{document.querySelectorAll('#section0 .rv').forEach(el=>el.classList.add('v'));},200);
+</script>
+</body>
+</html>
